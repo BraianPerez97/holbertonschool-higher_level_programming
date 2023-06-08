@@ -5,4 +5,4 @@ def no_c(my_string):
         if i == str_list[0:]:
             if i == 'C' or i == 'c':
                 str_list.remove(i)
-                return("".join(str_list))
+    return("".join(str_list))
