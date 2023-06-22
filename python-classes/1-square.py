@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-
 """Python OOP: Classes
 """
+
 
 class Square:
 
@@ -9,6 +9,7 @@ class Square:
     """
 
     def __init__(self, size):
+
         """Initialize method that stores the size of the square
 
         Args:
