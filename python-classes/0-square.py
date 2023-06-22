@@ -4,8 +4,9 @@
     Python OOP: classes
 """
 
+
 class Square:
-    
+
     """Class Square that defines a square.
     """
 
