@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Python OOP: classes
+"""
+Python OOP: classes
 """
 
 
@@ -74,7 +75,7 @@ class Square:
         """ Method that prints a # square according
         to the size value
         """
-        
+
         if self.size == 0:
             print()
         else:
