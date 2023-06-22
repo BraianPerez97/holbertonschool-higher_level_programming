@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-
-"""
-Python OOP: Classes
+"""Python OOP: Classes
 """
 
 class Square:
