@@ -40,7 +40,7 @@ class Square:
 
         """ Method to set the size value of the square object
         """
-        
+
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
