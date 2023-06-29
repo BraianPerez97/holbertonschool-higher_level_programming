@@ -32,4 +32,8 @@ class Square(Rectangle):
         self.width = value
         self.height = value
 
-    
+    def __str__(self):
+        """String special method"""
+        str_rectangle = "[Square]"
+        str_id = "({})".format(self.id)
+        str_xy = "{}/{} - 
