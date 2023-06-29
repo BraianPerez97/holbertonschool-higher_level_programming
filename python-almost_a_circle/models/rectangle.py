@@ -90,9 +90,9 @@ class Rectangle(Base):
     def display(self):
         """Display rectangle"""
         rectangle = self.y * "\n"
-        for i in range(self.__height):
-            rectangle += (" " * self.__x)
-            rectangle += ("#" * self.__width) + "\n"
+        for i in range(self.height):
+            rectangle += (" " * self.x)
+            rectangle += ("#" * self.width) + "\n"
         print(rectangle, end='')
 
         def update(self, *args):
