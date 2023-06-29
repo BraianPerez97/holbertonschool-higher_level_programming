@@ -53,7 +53,7 @@ def x(self, value):
     """X Setter"""
     if type(value) is not int:
         raise TypeError("x must be integer")
-    elif value > 0:
+    elif value < 0:
         raise ValueError("x must be >= 0")
     self.__x = value
 
