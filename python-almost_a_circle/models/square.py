@@ -43,7 +43,7 @@ class Square(Rectangle):
         str_xy = "{}/{} - ".format(self.x, self.y)
         str_size = "{}".format(self.size)
 
-        return str_rectangle + str_id + str_xy +str_size
+        return ("[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.width))
 
     def update(self, *args, **kwargs):
         """ update method """
