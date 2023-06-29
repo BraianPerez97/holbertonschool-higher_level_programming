@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""python OOP: ingeritance
+"""python OOP: inheritance
 """
 
 def lookup(obj):
