@@ -6,39 +6,40 @@ from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
-    """Class Rectangle"""
+    """ Class Rectangle """
 
     def __init__(self, size, x=0, y=0, id=None):
-        """Initializes instances"""
-        super().__init__(size, x, y, id)
+        """ Initializes instances """
+        super().__init__(size, size, x, y, id)
 
     def __str__(self):
-        """str special method"""
-        str_square = "[Square]"
-        str_id = "({})".format(self.id)
+        """ str special method """
+        str_square = "[Square] "
+        str_id = "({}) ".format(self.id)
         str_xy = "{}/{} - ".format(self.x, self.y)
         str_wh = "{}/{}".format(self.width, self.height)
 
         return str_square + str_id + str_xy + str_wh
 
     @property
-    def size(self, value):
-        """Getter Size"""
+    def size(self):
+        """ Getter size """
         return self.width
 
     @size.setter
     def size(self, value):
-        """Setter size"""
-        if type(value) is not int:
-            raise TypeError("Width must be an integer")
-        elif value <= 0:
-            raise ValueError("Width must be an integer")
+        """ Setter size """
         self.width = value
         self.height = value
 
     def __str__(self):
-        """String special method"""
-        return ("[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.width))
+        """ str special method """
+        str_rectangle = "[Square] "
+        str_id = "({}) ".format(self.id)
+        str_xy = "{}/{} - ".format(self.x, self.y)
+        str_size = "{}".format(self.size)
+
+        return str_rectangle + str_id + str_xy + str_size
 
     def update(self, *args, **kwargs):
         """ update method """
