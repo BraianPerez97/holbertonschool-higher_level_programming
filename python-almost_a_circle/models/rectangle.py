@@ -23,3 +23,13 @@ def width(self):
 def height(self):
     """height Getter"""
     return self.__height
+
+@property
+def x(self):
+    """X Getter"""
+    return self.__x
+
+@property
+def y(self):
+    """Y Getter"""
+    return self.__y
