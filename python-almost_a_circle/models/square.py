@@ -38,11 +38,6 @@ class Square(Rectangle):
 
     def __str__(self):
         """String special method"""
-        str_rectangle = "[Square]"
-        str_id = "({})".format(self.id)
-        str_xy = "{}/{} - ".format(self.x, self.y)
-        str_size = "{}".format(self.size)
-
         return ("[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.width))
 
     def update(self, *args, **kwargs):
