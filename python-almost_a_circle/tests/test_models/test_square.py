@@ -39,7 +39,7 @@ class TestSquare(unittest.TestCase):
 
     def test_square_representation(self):
         sq_repr = str(Square(4, 3, 2, 1))
-        result = '[Square] (1) 2/3 - 4'
+        result = '[Square] (1) 3/2 - 4'
         self.assertEqual(sq_repr, result)
 
     """tests dictionary method"""

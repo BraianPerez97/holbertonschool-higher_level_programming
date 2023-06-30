@@ -52,7 +52,7 @@ class TestRectangle(unittest.TestCase):
 
     def test_rectangle_representation(self):
         rect_repr = str(Rectangle(5, 4, 3, 2, 1))
-        result = '[Rectangle] (1) 2/3 - 4/5'
+        result = '[Rectangle] (1) 3/2 - 5/4'
         self.assertEqual(rect_repr, result)
 
     """tests dictionary method"""
