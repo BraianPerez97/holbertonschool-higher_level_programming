@@ -1,13 +1,14 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
+"""
+Python: Object Inheritance
+"""
+
 def is_same_class(obj, a_class):
-    """ Function that returns True/False if obj is a type of a_class
-
-    Args:
-        obj: object
-        a_class: class type
-
-    Returns:
-        True if type of obj is a_class
-        False, otherwise
     """
-    return type(obj) is a_class
+    Returns True if obj is an instance of class
+    """
+    if isinstance(a_class, type):
+        return (type(obj) is a_class)
+    else:
+        return (type(obj) is not a_class)
