@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Relational mapping
+"""Display all states from database
 """
 
 import sys
