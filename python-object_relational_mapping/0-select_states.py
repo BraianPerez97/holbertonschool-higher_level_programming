@@ -18,7 +18,7 @@ if __name__ == '__main__':
     form the table"""
     cur = db.cursor()
     cur.execute("SELECT * FROM states;")
-    rows = cur.fetchall()
+    states = cur.fetchall()
 
     for state in states:
         print(state)
