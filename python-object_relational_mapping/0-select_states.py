@@ -15,11 +15,9 @@ if __name__ == '__main__':
         db=sys.argv[3],
         port=3306
     )
-    """run query to retrieve all rows
-    form the table"""
     cur = db.cursor()
     cur.execute("SELECT * FROM states;")
     states = cur.fetchall()
 
-for state in states:
-    print(state)
+    for state in states:
+        print(state)
