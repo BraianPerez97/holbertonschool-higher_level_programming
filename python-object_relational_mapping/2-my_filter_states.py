@@ -5,12 +5,18 @@
 import MySQLdb
 import sys
 if __name__ == "__main__":
+    user = sys.argv[1],
+    passwd = sys.argv[2],
+    db = sys.argv[3],
+    state_name_searched = sys.argv[4]
+
     db = MySQLdb.connect(
-        user=sys.argv[1],
-        passwd=sys.argv[2],
-        db=sys.argv[3],
-        state_name_searched=sys.argv[4],
-        port=3306)
+        host='localhost',
+        user='user',
+        passwd='passwd',
+        db=db,
+        port=3306
+    )
 
     cur = db.cursor()
     cur.execute(
