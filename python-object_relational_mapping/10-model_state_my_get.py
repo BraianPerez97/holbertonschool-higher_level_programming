@@ -3,7 +3,7 @@
 
 import sys
 from model_state import Base, State
-from sqlalchemy import (create_engine, create_)
+from sqlalchemy import (create_engine)
 from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
@@ -14,7 +14,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
     states = session.query(State).\
-    filter(State.name == sys.argv[4]).order_by(State.id).all()
+        filter(State.name == sys.argv[4]).order_by(State.id).all()
     if states:
         print("{}".format(states[0].id))
     else:
