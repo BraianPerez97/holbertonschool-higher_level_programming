@@ -6,7 +6,6 @@ from sys import argv
 import MySQLdb
 
 if __name__ == '__main__':
-    state_names = sys.argv[4]
     db = MySQLdb.connect(host="localhost",
                          user=argv[1],
                          passwd=argv[2],
