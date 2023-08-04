@@ -1,25 +1,18 @@
 #!/usr/bin/python3
-"""List all states matching the name"""
-
-import MySQLdb
+"""
+Lists all values in the states tables of a database where name
+matches the argument in a safe way
+"""
 import sys
+import MySQLdb
 
 if __name__ == '__main__':
-    state_names = sys.argv[4]
-    db = MySQLdb.connect(host="localhost",
-                         user=sys.argv[1],
-                         passwd=sys.argv[2],
-                         db=sys.argv[3],
-                         port=3306)
+    db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2],
+                         db=sys.argv[3], port=3306)
 
     cur = db.cursor()
+    cur.execute("SELECT * FROM states WHERE name = %s;", (sys.argv[4],))
+    states = cur.fetchall()
 
-    cur.execute("SELECT * FROM state WHERE \
-                name = %s ORDER BY states.id;", (sys.argv[4],))
-    rows = cur.fetchall()
-
-    for row in rows:
-        print(row)
-
-    cur.close()
-    db.close()
+    for state in states:
+        print(state)
