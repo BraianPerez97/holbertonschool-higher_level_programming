@@ -1,8 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const headerElement = document.querySelector("header");
-    const changeColorButton = document.querySelector("#changeColorButton");
+// Select the header element using document.querySelector
+const headerElement = document.querySelector("header");
 
-    changeColorButton.addEventListener("click", () => {
-        headerElement.style.color = "#FF0000"; // Color Red
-    });
-});
+// Change the text color of the header to red
+headerElement.style.color = "#FF0000";
